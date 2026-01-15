@@ -1,6 +1,6 @@
 import { getDocument, GlobalWorkerOptions, version } from 'pdfjs-dist';
 // Set worker to local public file
-GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+GlobalWorkerOptions.workerSrc = `${import.meta.env.BASE_URL}pdf.worker.min.mjs`;
 
 export const parseFile = async (file) => {
     if (file.type === 'text/plain') {
@@ -17,7 +17,7 @@ export const parseFile = async (file) => {
             // Use local CMaps from public folder
             const loadingTask = getDocument({
                 data: arrayBuffer,
-                cMapUrl: '/cmaps/',
+                cMapUrl: `${import.meta.env.BASE_URL}cmaps/`,
                 cMapPacked: true,
             });
 
