@@ -90,9 +90,16 @@ function App() {
         alignItems: 'center',
         position: 'relative'
       }}>
-        <h1 style={{ margin: 0, letterSpacing: '-1px' }}>
-          SPEED<span style={{ color: 'var(--color-pivot)' }}>R</span>EADER
-        </h1>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt="RSVP Logo"
+            style={{ width: '40px', height: '40px', borderRadius: '8px' }}
+          />
+          <h1 style={{ margin: 0, letterSpacing: '-1px', fontSize: '1.8rem' }}>
+            SPEED<span style={{ color: 'var(--color-pivot)' }}>R</span>EADER
+          </h1>
+        </div>
         <button
           onClick={() => setShowExplainer(true)}
           style={{
