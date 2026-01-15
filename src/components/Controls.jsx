@@ -81,8 +81,8 @@ export default function Controls({
                 {/* Settings Controls */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
                     {/* WPM Control */}
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                        <label style={{ fontWeight: 600 }}>WPM: {wpm}</label>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}>
+                        <label style={{ fontWeight: 600, minWidth: '90px' }}>WPM: {wpm}</label>
                         <input
                             type="range"
                             min="60"
@@ -90,7 +90,7 @@ export default function Controls({
                             step="10"
                             value={wpm}
                             onChange={(e) => setWpm(Number(e.target.value))}
-                            style={{ width: '150px' }}
+                            style={{ width: '120px' }}
                         />
                     </div>
 

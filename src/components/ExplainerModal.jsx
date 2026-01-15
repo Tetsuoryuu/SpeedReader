@@ -37,8 +37,12 @@ export default function ExplainerModal({ onClose }) {
                     Traditional reading is slow because your eyes have to physically move across the page.
                 </p>
 
-                <p style={{ lineHeight: '1.7', opacity: 0.9, marginBottom: '2.5rem', textAlign: 'left' }}>
+                <p style={{ lineHeight: '1.7', opacity: 0.9, marginBottom: '1.5rem', textAlign: 'left' }}>
                     This app uses <a href="https://en.wikipedia.org/wiki/Rapid_serial_visual_presentation" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}><strong>RSVP</strong></a> (Rapid Serial Visual Presentation) to display words in a fixed location. By aligning the "focus point" of every word (the <span style={{ color: 'var(--color-pivot)' }}>red</span> letter), we eliminate eye movement, allowing you to absorb text as fast as your brain can think.
+                </p>
+
+                <p style={{ lineHeight: '1.7', opacity: 0.9, marginBottom: '2.5rem', textAlign: 'left' }}>
+                    <strong>Test Your Limits</strong> - Start at <strong>300 WPM</strong> to get the rhythm, that’s already faster than the average reader. But don't stay there. Once you lock in, push the speed higher. You will be surprised at how easily your brain adapts to 400, 500, or even 600 WPM when your eyes don't have to do the work.
                 </p>
 
                 <button
