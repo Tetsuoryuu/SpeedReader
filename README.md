@@ -48,6 +48,22 @@ npm run dev
 ```
 Open your browser to the URL shown in the terminal (usually `http://localhost:5173`).
 
+## 🌐 Deployment (GitHub Pages)
+
+This project is configured for easy deployment to GitHub Pages.
+
+1.  Push your code to GitHub.
+2.  Go to **Settings > Pages**.
+3.  Under **Build and deployment > Source**, select **GitHub Actions**.
+4.  Vite will automatically deploy the site if you use a standard Vite GitHub Action, or you can build it locally:
+    ```bash
+    npm run build
+    ```
+    The output will be in the `/dist` folder.
+
+> [!NOTE]
+> The `base` path in `vite.config.js` is set to `/SpeedReader/`. If you rename your repository, make sure to update this value.
+
 ## 👨‍💻 Author
 
 Developed by **Saverio Terracciano**
