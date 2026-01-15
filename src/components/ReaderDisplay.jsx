@@ -9,13 +9,14 @@ export default function ReaderDisplay({ word, font }) {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            height: '30vh',
+            minHeight: '200px',
             width: '100%',
+            maxWidth: '800px',
             position: 'relative',
             background: '#000', // slight contrast or transparent
             marginTop: '2rem',
             borderRadius: '8px',
-            overflow: 'hidden'
+            padding: '2rem 1rem'
         }}>
             {/* Focal Point Markers - Notches */}
             <div style={{
@@ -40,7 +41,7 @@ export default function ReaderDisplay({ word, font }) {
                 display: 'flex',
                 alignItems: 'baseline',
                 width: '100%',
-                fontSize: '4rem',
+                fontSize: 'clamp(2rem, 10vw, 4.5rem)',
                 fontFamily: font,
                 lineHeight: 1
             }}>
